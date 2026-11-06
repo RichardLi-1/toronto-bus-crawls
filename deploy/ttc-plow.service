@@ -1,0 +1,13 @@
+[Unit]
+Description=City of Toronto PlowTO collector
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/opt/ttc/.venv/bin/python -I /opt/ttc/collector/plow.py
+WorkingDirectory=/opt/ttc
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

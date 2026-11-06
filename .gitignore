@@ -1,0 +1,20 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# All collected and downloaded data. It's large, and data/election/ holds
+# candidates' emails and phone numbers from the City's files.
+data/
+
+# Generated posters
+out/
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+
+# macOS
+.DS_Store
